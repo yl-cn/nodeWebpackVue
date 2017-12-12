@@ -1,9 +1,28 @@
+# http://editorconfig.org/
 root = true
 
 [*]
-charset = utf-8
-indent_style = space
-indent_size = 2
 end_of_line = lf
+charset = utf-8
 insert_final_newline = true
 trim_trailing_whitespace = true
+
+[*.go]
+indent_style = tab
+
+[*.{js,vue,jsx,json,html}]
+indent_style = space
+indent_size = 4
+
+[package.json]
+indent_size = 2
+
+[i18n/**.json]
+indent_size = 2
+
+[Makefile]
+indent_style = tab
+
+[*.scss]
+indent_style = space
+indent_size = 4
